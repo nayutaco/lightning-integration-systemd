@@ -15,5 +15,5 @@ docker run \
   -v output:/root/lightning-integration/output \
   lightning-integration make update clients test site
 
-az storage blob upload-batch --account-name lightningintegration -d '$web/reports' -s reports
-az storage blob upload-batch --account-name lightningintegration -d '$web/output' -s output
+az storage blob upload-batch --account-name $AZURE_STORAGE_ACCOUNT -d '$web/reports' -s reports
+az storage blob upload-batch --account-name $AZURE_STORAGE_ACCOUNT -d '$web/output' -s output

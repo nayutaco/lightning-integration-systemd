@@ -1,3 +1,4 @@
 [Service]
 Type=simple
 ExecStart=/opt/lightning-integration-systemd/run.sh
+Environment=AZURE_STORAGE_ACCOUNT=lightningintegration
