@@ -5,7 +5,7 @@ A systemd service/timer to run [lightning-integration](https://github.com/cdecke
 ```
 sudo -H az login
 
-git clone https://github.com/tock203/lightning-integration-systemd.git /opt/lightning-integration-systemd
+git clone https://github.com/tock203/lightning-integration-systemd.git /opt/lightning-integration-systemd -b until-dockerfile-merged
 cd /opt/lightning-integration-systemd
 # Edit AZURE_STORAGE_ACCOUNT in lightning-integration.service according to your environment
 

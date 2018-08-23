@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /opt
 test -d lightning-integration \
-  || git clone https://github.com/cdecker/lightning-integration.git lightning-integration \
+  || git clone https://github.com/tock203/lightning-integration.git lightning-integration -b until-dockerfile-merged  \
   || exit 1
 
 cd lightning-integration
