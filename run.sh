@@ -16,4 +16,4 @@ docker run \
 
 docker rmi lightning-integration
 az storage blob upload-batch --account-name $AZURE_STORAGE_ACCOUNT -d '$web/reports' -s reports
-az storage blob upload-batch --account-name $AZURE_STORAGE_ACCOUNT -d '$web/output' -s output
+az storage blob upload-batch --account-name $AZURE_STORAGE_ACCOUNT -d '$web' -s output
